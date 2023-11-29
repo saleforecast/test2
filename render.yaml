@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: selenium
+    runtime: docker
+    rootDir: .
+    dockerCommand: "docker run -d -p 4445:4444 --shm-size 4g selenium/standalone-chrome:4.2.2"
